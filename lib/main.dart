@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:voice_ai_summary_demo/visits/visits_controller.dart';
 
-void main() {
+void main() async {
+  await dotenv.load(fileName: '.env.dev');
   runApp(const ProviderScope(overrides: [], child: MyApp()));
 }
 

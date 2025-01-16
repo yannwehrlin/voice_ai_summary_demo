@@ -1,8 +1,10 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+import 'package:voice_ai_summary_demo/credentials.dart';
+
 class AIService {
-  final String apiKey = 'sYiGrCZeepeOlrY98V0ooNuEDHMf9oGYFQ8wdxnU';
+  final String apiKey = Credentials.cohereApiKey;
 
 //   Future<String> getSummary(String text) async {
 //     final response = await http.post(
